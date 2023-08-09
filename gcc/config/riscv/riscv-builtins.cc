@@ -175,6 +175,7 @@ AVAIL (hint_pause, (!0))
 
 static const struct riscv_builtin_description riscv_builtins[] = {
   #include "riscv-cmo.def"
+  #include "riscv-clmul.def"
   #include "riscv-scalar-crypto.def"
 
   DIRECT_BUILTIN (frflags, RISCV_USI_FTYPE, hard_float),
