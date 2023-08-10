@@ -3365,7 +3365,7 @@
 
 (define_insn "prefetch"
   [(prefetch (match_operand 0 "address_operand" "r")
-             (match_operand 1 "imm5_operand" "i")
+             (match_operand 1 "const_int_operand" "n")
              (match_operand 2 "const_int_operand" "n"))]
   "TARGET_ZICBOP"
 {
