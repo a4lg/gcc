@@ -21643,6 +21643,30 @@ the Zihintpause extension, it indicates that the current hart should be
 temporarily paused or slowed down.
 @enddefbuiltin
 
+@defbuiltin{void __builtin_riscv_zicbom_cbo_clean (void *@var{addr})}
+Generates the @code{cbo.clean} machine instruction to perform a clean operation
+on a cache block containing @var{addr}.
+Available if the Zicbom extension is enabled.
+@enddefbuiltin
+
+@defbuiltin{void __builtin_riscv_zicbom_cbo_flush (void *@var{addr})}
+Generates the @code{cbo.flush} machine instruction to perform a flush operation
+on a cache block containing @var{addr}.
+Available if the Zicbom extension is enabled.
+@enddefbuiltin
+
+@defbuiltin{void __builtin_riscv_zicbom_cbo_inval (void *@var{addr})}
+Generates the @code{cbo.inval} machine instruction to perform an invalidate
+operation on a cache block containing @var{addr}.
+Available if the Zicbom extension is enabled.
+@enddefbuiltin
+
+@defbuiltin{void __builtin_riscv_zicboz_cbo_zero (void *@var{addr})}
+Generates the @code{cbo.zero} machine instruction to store zeros to the full set
+of bytes corresponding to a cache block containing @var{addr}.
+Available if the Zicboz extension is enabled.
+@enddefbuiltin
+
 @node RISC-V Vector Intrinsics
 @subsection RISC-V Vector Intrinsics
 
